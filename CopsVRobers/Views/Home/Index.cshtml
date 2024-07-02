@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+   <div class="container mt-5">
+        <div class="row">
+            <!-- Play Against Bot Card -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Play Against Bot</h5>
+                        <p class="card-text">Challenge an AI opponent in a game of Cops vs Robres.</p>
+                        <a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="Bot">Play Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Multiplayer Card -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Multiplayer</h5>
+                        <p class="card-text">Play a game of tic-tac-toe with a friend.</p>
+                        <a class="btn btn-primary" asp-area="" asp-controller="Home" asp-action="Multiplayer">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
