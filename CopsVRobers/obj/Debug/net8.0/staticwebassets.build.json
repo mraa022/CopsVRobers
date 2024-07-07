@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "humQw6BZ1IycURuN8WsQnoOMNbLex4SAsz8L5LzrOKM=",
+  "Hash": "zAthVVuHvydl/G9ZE+shqTwDcPKFVKH993cV1wbxEAU=",
   "Source": "CopsVRobers",
   "BasePath": "_content/CopsVRobers",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/adnanbadri/Desktop/C# stuff/CopsVRobers/CopsVRobers/wwwroot/js/graph_helper.js",
+      "SourceId": "CopsVRobers",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/adnanbadri/Desktop/C# stuff/CopsVRobers/CopsVRobers/wwwroot/",
+      "BasePath": "_content/CopsVRobers",
+      "RelativePath": "js/graph_helper.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/graph_helper.js"
     },
     {
       "Identity": "/Users/adnanbadri/Desktop/C# stuff/CopsVRobers/CopsVRobers/wwwroot/js/graph.js",

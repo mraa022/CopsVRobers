@@ -18,12 +18,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/adnanbadri/Desktop/C# stuff/CopsVRobers/CopsVRobers
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/adnanbadri/Desktop/C\# stuff/CopsVRobers/CopsVRobers/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/adnanbadri/Desktop/C\# stuff/CopsVRobers/CopsVRobers/Views/Home/Bot.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Cb3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/adnanbadri/Desktop/C\# stuff/CopsVRobers/CopsVRobers/Views/Home/CreateLobby.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9DcmVhdGVMb2JieS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/adnanbadri/Desktop/C\# stuff/CopsVRobers/CopsVRobers/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/adnanbadri/Desktop/C\# stuff/CopsVRobers/CopsVRobers/Views/Home/JoinLobby.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Kb2luTG9iYnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/adnanbadri/Desktop/C\# stuff/CopsVRobers/CopsVRobers/Views/Home/Multiplayer.cshtml]

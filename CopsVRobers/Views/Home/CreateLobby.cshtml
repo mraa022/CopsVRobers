@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="~/css/graph.css" asp-append-version="true" />
+
+
+<div class='waiting' style="text-align: center;">
+</div>
+
+<div class="container">
+    
+        @* This div contains the graph gui *@
+        <div id="cy"></div> 
+            
+</div>
+
+<script src="~/js/graph_helper.js" asp-append-version="true"></script>
+<script>
+    var socketUrl = "ws://" + window.location.hostname + ":" + window.location.port + "/Home/ws";
+    var socket = new WebSocket(socketUrl);
+    var otherId=null;
+
+
+    socket.addEventListener('close', function(event) {
+        alert('Other player disconnected!');
+        // Redirect to home page
+        window.location.href = '/'; // Replace '/' with your home page URL
+    });
+
+    socket.addEventListener("open", (event) => { // Socket was opened 
+        console.log("Connected")
+        
+        var waitingDiv = document.querySelector('.waiting');
+        var h1 = document.createElement('h1');
+        h1.textContent = 'Waiting for other player to join.';
+        waitingDiv.appendChild(h1);
+       
+    });
+
+    socket.addEventListener("message", (event) => {
+
+        
+        var receivedMessage = JSON.parse(event.data);
+        if (receivedMessage.Type=='lobby_created'){  // When connected to the server, you get a message
+            var lobby_id = receivedMessage.Id       // save the socket id of the current running socket so other player can use it to connect
+            var waitingDiv = document.querySelector('.waiting');
+            var h1 = document.createElement('h1');
+            h1.textContent = 'Ask other player to use the Id: '+lobby_id + " to connect to your game." ;
+            waitingDiv.appendChild(h1);
+        }
+
+        else if (receivedMessage.Type=="other_joined"){ // if other player joined
+            console.log("Other player connected");
+            otherId = receivedMessage.Id // the socket id of the other player's socket. 
+
+            var waitingDiv = document.querySelector('.waiting');
+            waitingDiv.style.display = "none"; // Hide waiting div
+
+            
+            var cy = createGraph(); // create the graph
+            mainLoop("cop",cy,otherId,socket); // main logic of the game
+
+            
+           
+        }
+
+        
+       
+
+    
+    });
+
+</script>

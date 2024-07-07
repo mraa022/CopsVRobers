@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CopsVRobers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0cee53c58242e548341ec71da1bdcaae54453c2")]
 [assembly: System.Reflection.AssemblyProductAttribute("CopsVRobers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CopsVRobers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,0 +1,47 @@
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+        background-color: #f0f0f0;
+        color: #333;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+    .content {
+        max-width: 800px;
+        margin: auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+</style>
+
+<div class="content">
+        <h1>Cops vs Robbers Game</h1>
+        <h2>Description</h2>
+        <p>
+            "Cops vs Robbers" is an exciting and strategic game where two players, the Cop and the Robber, compete against each other. The game is played on a predefined map where the objective for the Robber is to evade capture, and for the Cop to capture the Robber.
+        </p>
+        
+        <p>
+            The game originally comes from graph theory where theoretical aspects of it (like minimum number of cops required to capture a robber) are studied. The reader is refered to <a href="https://en.wikipedia.org/wiki/Cop-win_graph#:~:text=The%20cop%20chooses%20an%20initial,same%20vertex%20as%20the%20robber.">here</a> for more information.
+        </p>
+        <h2>How it works</h2>
+        <ul>
+            <li>The "host" invites a player to a game. By default the Host is the cop and the other player is the robber.</li>
+            <li>The game is turn based and the cop gets the first turn. Both the cop and robber pick their start location during their first turns.</li>
+            <li>The map the game takes place in is a series of connected nodes. Where you can only move to nodes the node you are currently on is connected to.</li>
+            <li>The Robbers' objective is to avoid capture and complete their heist objectives.</li>
+            <li>Players take turns moving their pieces on the map.</li>
+            
+            <li>The game ends (and therefore the cop wins) when the cop and robber are on the same node.</li>
+        </ul>
+        
+    </div>

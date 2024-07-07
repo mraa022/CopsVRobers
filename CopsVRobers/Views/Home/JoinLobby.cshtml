@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="~/css/graph.css" asp-append-version="true" />
+
+
+
+
+<script src="~/js/graph_helper.js" asp-append-version="true"></script>
+
+<style>
+        .form-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+
+<div class="waiting">
+    <div class="form-container">
+        <form id="form">
+            <div class="form-group">
+                <label for="Id">Enter the Id of the lobby</label>
+                <input type="text" class="form-control" id="Id" placeholder="Enter Id">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="container">
+    
+        @* This div contains the graph gui *@
+        <div id="cy"></div> 
+            
+</div> 
+
+
+<script>
+    var form = document.getElementById('form');
+    var cy=null;
+    form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            // Retrieve form data
+            var Id = document.getElementById('Id').value;
+            var socketUrl = "ws://" + window.location.hostname + ":" + window.location.port + "/Home/ws";
+            var socket = new WebSocket(socketUrl);
+
+
+            socket.addEventListener('close', function(event) {
+                alert('Other player disconnected!');
+                // Redirect to home page
+                window.location.href = '/'; // Replace '/' with your home page URL
+            });
+
+            // when connected to other player, alert the other player
+            socket.addEventListener("open", (event) => { 
+                console.log("Connected")
+                var message = {
+                    "Type": "connect",
+                    "Id": Id
+                }
+                socket.send(JSON.stringify(message)); // 
+                
+                var waitingDiv = document.querySelector('.waiting');
+                waitingDiv.style.display = "none"; // Hide the join div
+
+                cy = createGraph();
+                mainLoop("robber",cy,Id,socket); // main logic
+                
+
+
+            
+            });
+
+            
+        });
+</script>

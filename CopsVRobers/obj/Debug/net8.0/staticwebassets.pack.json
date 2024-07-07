@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets/js/graph.js"
     },
     {
+      "Id": "/Users/adnanbadri/Desktop/C# stuff/CopsVRobers/CopsVRobers/wwwroot/js/graph_helper.js",
+      "PackagePath": "staticwebassets/js/graph_helper.js"
+    },
+    {
       "Id": "/Users/adnanbadri/Desktop/C# stuff/CopsVRobers/CopsVRobers/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

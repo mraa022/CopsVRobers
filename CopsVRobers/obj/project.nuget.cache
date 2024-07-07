@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Rb17PiEowOA=",
+  "dgSpecHash": "xW5FHrcu0Ew=",
   "success": true,
   "projectFilePath": "/Users/adnanbadri/Desktop/C# stuff/CopsVRobers/CopsVRobers/CopsVRobers.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/adnanbadri/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
